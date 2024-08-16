@@ -2,3 +2,5 @@ name: ItemWord
 version: '1.0'
 main: dev.meywy.itemWord.ItemWord
 api-version: '1.21'
+commands:
+  iword:

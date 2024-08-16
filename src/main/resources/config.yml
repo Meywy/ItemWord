@@ -1,8 +1,19 @@
 
+# If player has this permission, he can receive items using the chat
+permissions:
+  receive: "iword.receive"
+  admin: "iword.admin"
 
+# Message player receives after typing the right name of block
+item:
+  message: "&aYou received"
+  amount: 1
 
-##
-receive-message: "&aYou received"
-
-
-permission: 'itemword.chat'
+# Changes if player receives an item, if the message he sent doesn't equal to any existing item and the item.
+# For example, when player types "hi" or "today is good weather", he receives a diamond.
+# By default, disabled.
+no-existing-item:
+  enable: false
+  type: 'DIAMOND'
+  item-amount: 1
+  message: '&aYou received:'
